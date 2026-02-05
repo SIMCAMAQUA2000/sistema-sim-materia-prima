@@ -1,0 +1,10 @@
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; margin: 0; }
+header { background: #2c3e50; color: white; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+.login-container { max-width: 400px; margin: 100px auto; padding: 2rem; background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; }
+input, button { width: 100%; padding: 10px; margin: 10px 0; border-radius: 4px; border: 1px solid #ddd; box-sizing: border-box; }
+button { background-color: #27ae60; color: white; border: none; cursor: pointer; font-weight: bold; }
+button:hover { background-color: #219150; }
+main { max-width: 800px; margin: 20px auto; padding: 20px; background: white; border-radius: 8px; }
+table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+th { background-color: #f8f9fa; }

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Painel da Empresa - SIM</title>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <header>
+        <div id="header-empresa">
+            <img id="logo-exibicao" src="" style="height: 50px;">
+            <h1 id="nome-empresa">Carregando...</h1>
+        </div>
+        <button onclick="logout()">Sair</button>
+    </header>
+
+    <main>
+        <h3>Lançar Matéria-Prima</h3>
+        <form id="form-producao">
+            <input type="text" id="produto" placeholder="Nome do Produto (ex: Carne Bovina)" required>
+            <input type="number" id="quantidade" placeholder="Quantidade (kg)" required>
+            <button type="submit">Registrar Lançamento</button>
+        </form>
+
+        <hr>
+        <h3>Meus Lançamentos</h3>
+        <table id="tabela-dados">
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Produto</th>
+                    <th>Qtd (kg)</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="corpo-tabela"></tbody>
+        </table>
+    </main>
+    
+    <button onclick="gerarRelatorioPDF()">Gerar Relatório PDF</button>
+    <script src="js/database.js"></script>
+</body>
+</html>
